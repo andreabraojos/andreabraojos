@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Andrea Braojos</title>
+</head>
+
+<body>
+    <a href="#contenido">Saltar al contenido</a>
+    <header>
+        <h1>Contacto</h1>
+        <p>Estudiante del Doble Grado en
+            Ingeniería Matemática Aplicada al
+            Análisis de Datos e Ingeniería Informática,
+            con interés en la inteligencia artificial.
+        </p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido" tabindex="-1">
+        <form method="post" action="#">
+            <fieldset>
+                <legend>Tus datos</legend>
+
+                <p>
+                    <label for="nombre">Nombre (obligatorio)</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="60"
+                        autocomplete="name">
+                </p>
+
+                <p>
+                    <label for="email">Email (obligatorio)</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                </p>
+
+                <p>
+                    <label for="empresa">
+                        Empresa u organización (opcional)
+                    </label>
+                    <input type="text" id="empresa" name="empresa" autocomplete="organization">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tu proyecto</legend>
+
+                <p>
+                    <label for="tipo-proyecto">
+                        Tipo de proyecto (obligatorio)
+                    </label>
+                    <select id="tipo-proyecto" name="tipo-proyecto" required>
+                        <option value="">Elige un tipo</option>
+
+                        <optgroup label="Web">
+                            <option value="pagina-web">Página web</option>
+                        </optgroup>
+
+                        <optgroup label="App">
+                            <option value="aplicacion">Aplicación</option>
+                        </optgroup>
+
+                        <optgroup label="Otro">
+                            <option value="otro">Otro proyecto</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <div role="group" aria-labelledby="modalidad-titulo">
+                    <p id="modalidad-titulo">Modalidad</p>
+
+                    <p>
+                        <input type="radio" id="modalidad-remoto" name="modalidad" value="remoto" checked>
+                        <label for="modalidad-remoto">Remoto</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="modalidad-presencial" name="modalidad" value="presencial">
+                        <label for="modalidad-presencial">Presencial</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="modalidad-hibrido" name="modalidad" value="hibrido">
+                        <label for="modalidad-hibrido">Híbrido</label>
+                    </p>
+                </div>
+
+                <div role="group" aria-labelledby="servicios-titulo">
+                    <p id="servicios-titulo">
+                        Servicios (puedes elegir varios)
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="servicio-diseno" name="servicios" value="diseno">
+                        <label for="servicio-diseno">Diseño</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="servicio-frontend" name="servicios" value="frontend">
+                        <label for="servicio-frontend">Front-end</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="servicio-backend" name="servicios" value="backend">
+                        <label for="servicio-backend">Back-end</label>
+                    </p>
+                </div>
+
+                <p>
+                    <label for="fecha-inicio">
+                        Fecha de inicio (obligatorio)
+                    </label>
+                    <input type="date" id="fecha-inicio" name="fecha-inicio" required min="2026-10-15">
+                </p>
+
+                <p>
+                    <label for="mensaje">Mensaje (obligatorio)</label>
+                    <textarea id="mensaje" name="mensaje" required maxlength="500" rows="5"
+                        aria-describedby="ayuda-mensaje"></textarea>
+                </p>
+
+                <p id="ayuda-mensaje">
+                    Cuéntame qué necesitas y para cuándo.
+                    Máximo 500 caracteres.
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Cómo te respondo</legend>
+
+                <div role="group" aria-labelledby="respuesta-titulo">
+                    <p id="respuesta-titulo">Preferencia de respuesta</p>
+
+                    <p>
+                        <input type="radio" id="respuesta-email" name="respuesta" value="email" checked>
+                        <label for="respuesta-email">Email</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="respuesta-telefono" name="respuesta" value="telefono">
+                        <label for="respuesta-telefono">Teléfono</label>
+                    </p>
+                </div>
+
+                <p>
+                    <label for="telefono">Teléfono (opcional)</label>
+                    <input type="tel" id="telefono" name="telefono" autocomplete="tel" pattern="[6-9][0-9]{8}"
+                        title="Nueve cifras, sin espacios ni prefijos, empezando por 6, 7, 8 o 9."
+                        aria-describedby="ayuda-telefono">
+                </p>
+
+                <p id="ayuda-telefono">
+                    Introduce nueve cifras, sin espacios ni prefijo +34,
+                    empezando por 6, 7, 8 o 9.
+                </p>
+
+                <p>
+                    <input type="checkbox" id="privacidad" name="privacidad" value="aceptada" required>
+                    <label for="privacidad">
+                        Acepto la política de privacidad (obligatorio)
+                    </label>
+                </p>
+            </fieldset>
+
+            <button type="submit">Enviar mensaje</button>
+            <button type="reset">Borrar</button>
+        </form>
+    </main>
+
+    <aside>
+        <h2>Disponibilidad</h2>
+        <p>
+            Disponible para trabajo desde <time datetime="2027-06">junio de 2027</time>.
+        </p>
+        <p>
+            Última actualización:
+            <time datetime="2026-10-14">14 de octubre de 2026</time>
+        </p>
+    </aside>
+    <footer>
+        <address>
+            <a href="mailto:andreabraojos16@gmail.com">
+                andreabraojos16@gmail.com
+            </a>
+        </address>
+
+        <p>
+            <a href="https://github.com/andreabraojos" target="_blank" rel="noopener">GitHub</a>
+
+            <a href="https://www.linkedin.com/in/andrea-braojos-022297251" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+
+        <p><small>&copy; 2026 Andrea Braojos</small></p>
+    </footer>
+</body>
+
+</html>

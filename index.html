@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Braojos | Portfolio</title>
+</head>
+
+<body>
+    <a href="#contenido">Saltar al contenido</a>
+    <header>
+        <h1>Andrea Braojos</h1>
+        <p>Estudiante del Doble Grado en
+            Ingeniería Matemática Aplicada al
+            Análisis de Datos e Ingeniería Informática,
+            con interés en la inteligencia artificial.
+        </p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido" tabindex="-1">
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+
+            <p>
+                Estoy cursando el Doble Grado
+                en Ingeniería Matemática Aplicada
+                al Análisis de Datos e Ingeniería Informática
+                en la Universidad Europea de Madrid.
+                Me interesa especialmente la
+                <strong>inteligencia artificial</strong>
+                y su relación con el análisis de datos.
+            </p>
+
+            <p>
+                He participado en proyectos universitarios con HPE sobre
+                demanda eléctrica y accidentalidad en Madrid. También
+                he desarrollado La Despensa, una aplicación en Java,
+                y trabajo en Athena, <em>mi proyecto personal</em>
+                de asistente en Python.
+            </p>
+        </section>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+
+            <dl>
+                <dt>CSS</dt>
+                <dd>
+                    He utilizado CSS para modificar estilos
+                    básicos de páginas web durante mis prácticas
+                    en Siemens.
+                </dd>
+                <dt>Java</dt>
+                <dd>
+                    He trabajado en un proyecto de inventario de una nevera o despensa utilizando programación orientada
+                    a objetos.
+                </dd>
+                <dt>Power BI</dt>
+                <dd>
+                    He creado gráficos para visualizar datos en proyectos de la universidad, incluido el análisis de la
+                    demanda.
+                </dd>
+                <dt>Jupyter Notebook</dt>
+                <dd>
+                    Lo he utilizado en trabajos universitarios de análisis de demanda y accidentalidad, y en un proyecto
+                    de búsqueda de plazas de aparcamiento para personas con movilidad reducida en Madrid.
+                </dd>
+                <dt>MATLAB</dt>
+                <dd>
+                    Lo he utilizado para resolver ejercicios de estadística computacional en la universidad.
+                </dd>
+            </dl>
+        </section>
+        <section id="formacion">
+            <h2>Formación</h2>
+
+            <table>
+                <caption>Estudios universitarios</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Centro</th>
+                        <th scope="col">Titulación</th>
+                        <th scope="col">Años</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Universidad Europea de Madrid</th>
+                        <td>
+                            Doble Grado en Ingeniería Matemática Aplicada
+                            al Análisis de Datos e Ingeniería Informática
+                        </td>
+                        <td>2022-2027</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">En curso. Finalización prevista en 2027.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section id="proyectos-destacados">
+            <h2>Proyectos destacados</h2>
+
+            <article id="epanet" class="proyecto" data-anio="2024-2025" data-tecnologia="html">
+                <h3>EPANET</h3>
+
+                <figure>
+                    <img src="img/proyecto-epanet.png" alt="Gráfico de la demanda eléctrica media por mes" width="600">
+                    <figcaption>
+                        Promedio de demanda eléctrica real por mes en EPANET.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    Proyecto universitario en colaboración con HPE
+                    para analizar y predecir la demanda eléctrica en España.
+                    Desarrollé la página web y participé en otras tareas del equipo.
+                </p>
+
+                <a href="proyectos.html#epanet">Ver la ficha de EPANET</a>
+            </article>
+            <article id="accidentalidad" class="proyecto" data-anio="2023" data-tecnologia="python">
+                <h3>Análisis de accidentalidad en Madrid</h3>
+
+                <figure>
+                    <img src="img/proyecto-accidentalidad.png"
+                        alt="Gráfico del número de accidentes por hora del día en Madrid" width="600">
+                    <figcaption>
+                        Número de accidentes por hora del día.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    Proyecto universitario en colaboración con HPE sobre accidentalidad en Madrid. Participé en la
+                    limpieza y preparación de datos con Python y Jupyter Notebook.
+                </p>
+
+                <a href="proyectos.html#accidentalidad">Ver la ficha de accidentalidad</a>
+            </article>
+            <article id="athena" class="proyecto en-curso" data-anio="2026" data-tecnologia="python">
+                <h3>Athena V1</h3>
+                <p><mark>En curso</mark></p>
+
+                <figure>
+                    <img src="img/proyecto-athena.png"
+                        alt="Athena iniciándose y respondiendo al comando salir en la terminal" width="600">
+                    <figcaption>
+                        Inicio y cierre de Athena en la terminal.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    Proyecto personal de un asistente en Python que permite guardar recuerdos y gestionar tareas desde
+                    la terminal. Participé en su diseño, programación, pruebas y revisión.
+                </p>
+
+                <a href="proyectos.html#athena">Ver la ficha de Athena</a>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <h2>Disponibilidad</h2>
+        <p>
+            Disponible para trabajo desde <time datetime="2027-06">junio de 2027</time>.
+        </p>
+        <p>
+            Última actualización:
+            <time datetime="2026-10-14">14 de octubre de 2026</time>
+        </p>
+    </aside>
+    <footer>
+        <address>
+            <a href="mailto:andreabraojos16@gmail.com">
+                andreabraojos16@gmail.com
+            </a>
+        </address>
+
+        <p>
+            <a href="https://github.com/andreabraojos" target="_blank" rel="noopener">GitHub</a>
+
+            <a href="https://www.linkedin.com/in/andrea-braojos-022297251" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+
+        <p><small>&copy; 2026 Andrea Braojos</small></p>
+    </footer>
+</body>
+
+</html>
